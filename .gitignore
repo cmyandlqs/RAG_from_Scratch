@@ -1,0 +1,18 @@
+# 环境变量
+.env
+
+# IDE
+.vscode/
+.claude/
+.idea/
+
+# 数据文件
+*.pkl
+*.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/

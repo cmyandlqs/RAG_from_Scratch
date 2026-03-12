@@ -7,3 +7,7 @@ python-dotenv>=1.0.0
 # 向量检索
 sentence-transformers>=2.2.0
 numpy>=1.24.0
+
+# 模型下载
+modelscope>=1.0.0
+

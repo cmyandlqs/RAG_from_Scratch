@@ -15,10 +15,27 @@
 ```bash
 # 安装依赖
 pip install -r requirements.txt
-
-# 下载 Cross-Encoder 模型 (可选，用于重排序)
-# 模型已包含在项目中: ms-marco-MiniLM-L6-v2 (22M 参数)
 ```
+
+### 下载 Reranker 模型
+
+**方式一：使用 ModelScope（推荐，国内速度快）**
+
+```bash
+# 安装 modelscope
+pip install modelscope
+
+# 下载模型到项目目录
+modelscope download --model cross-encoder/ms-marco-MiniLM-L6-v2 --local_dir ./ms-marco-MiniLM-L6-v2
+```
+
+**方式二：手动下载**
+
+从 [HuggingFace](https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2) 下载模型文件到项目目录 `ms-marco-MiniLM-L6-v2/`
+
+**方式三：自动下载（首次运行时）**
+
+`sentence-transformers` 会在首次运行时自动下载模型到缓存目录，然后修改 `rag.py` 中的模型路径。
 
 ## 🔑 配置
 
